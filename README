@@ -52,8 +52,19 @@ Also, one move may form more than one lines.
 For example, sometimes a horizontal line and a diagonal line can be formed simultaneously. All opponent’s
 pieces on those lines must be flipped. The game ends when neither player can move. 
 
+The program the following command line format:
+$java Reversi FLAG player board
+“FLAG” is an integer that specifies the output of the program
+“player” denotes who
+plays at this board, and takes value in 1 or 2. “board” is a string of length 16 that specifies the board in the
+natural reading order
 
-
+1. When FLAG=100, print out all the successor boards of the given state. 
+2. When FLAG=200, verify if the board is a terminal node. 
+3. When FLAG=300, on line one print the game theoretic value for the given (player, board) pair; on line two print the number of states explored by your algorithm.
+4. When FLAG=400, record the first successor that achieve that optimal value and treat it as the move.
+5. Implement the alpha-beta pruning algorithm
+6. When FLAG=600, do the same thing as FLAG=400 but with alpha-beta pruning. 
 
 
 
